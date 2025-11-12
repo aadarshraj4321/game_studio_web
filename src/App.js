@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Gamepad2, Download, Star, Users, Trophy, Menu, X, Play, ArrowRight, Mail, Github, Twitter, Sparkles } from 'lucide-react';
+import { Gamepad2, Download, Star, Users, Trophy, Menu, X, Play, ArrowRight, Mail, Github, Twitter } from 'lucide-react';
 
 const GamingPortfolio = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState({});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1029,7 +1028,7 @@ const GamingPortfolio = () => {
           </div>
           <div style={styles.footerText}>
             <p style={{ marginBottom: '4px' }}>&copy; 2025 yngStudio. All rights reserved.</p>
-            <p style={{ fontSize: '0.875rem' }}>Crafted with Love for gamers worldwide</p>
+            <p style={{ fontSize: '0.875rem' }}>Crafted with ❤️ for gamers worldwide</p>
           </div>
         </div>
       </footer>
