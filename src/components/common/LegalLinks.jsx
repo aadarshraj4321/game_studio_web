@@ -5,18 +5,28 @@ export default function LegalLinks({ basePath }) {
   return (
     <div className="legal-links-grid">
       <Link to={`${basePath}/privacy`} className="legal-card">
-        <Shield size={20} />
+        <div
+          className="legal-card-icon"
+          style={{ background: "rgba(108, 99, 255, 0.12)", border: "1px solid rgba(108, 99, 255, 0.2)" }}
+        >
+          <Shield size={18} color="var(--primary-light)" />
+        </div>
         <div>
           <h3>Privacy Policy</h3>
-          <p>See how data is collected and used.</p>
+          <p>How data is collected, used, and protected.</p>
         </div>
       </Link>
 
       <Link to={`${basePath}/delete`} className="legal-card">
-        <Trash2 size={20} />
+        <div
+          className="legal-card-icon"
+          style={{ background: "rgba(255, 71, 87, 0.1)", border: "1px solid rgba(255, 71, 87, 0.2)" }}
+        >
+          <Trash2 size={18} color="var(--danger)" />
+        </div>
         <div>
           <h3>Delete Account / Data</h3>
-          <p>See how users can request account or data deletion.</p>
+          <p>How to request account or data deletion.</p>
         </div>
       </Link>
     </div>
